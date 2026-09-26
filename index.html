@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Adarsh Business | Online Booking & Orders</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #111827;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav h2 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      margin: 8px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      background: #38bdf8;
+      color: #082f49;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 70px 7%;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 40px;
+    }
+
+    /* SERVICES */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin: 15px 0;
+    }
+
+    .card p {
+      color: #666;
+    }
+
+    /* ORDER */
+    .order-box {
+      max-width: 650px;
+      margin: auto;
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ddd;
+      border-radius: 7px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .submit {
+      width: 100%;
+      background: #25D366;
+      color: white;
+      font-size: 17px;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+      background: #111827;
+      color: white;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+
+    .phone {
+      font-size: 25px;
+      color: #38bdf8;
+      margin: 15px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #030712;
+      color: #aaa;
+    }
+
+    /* MOBILE */
+    @media(max-width: 700px) {
+
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 5px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <h2>Adarsh Business</h2>
+
+    <div>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#order">Order</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div>
+      <h1>Welcome to <span>Adarsh Business</span></h1>
+
+      <p>
+        Quality Products & Professional Services
+      </p>
+
+      <a href="#order" class="btn">
+        Book / Order Now
+      </a>
+
+      <a
+        href="https://wa.me/919217967776"
+        target="_blank"
+        class="btn whatsapp">
+        WhatsApp Us
+      </a>
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section id="services">
+
+    <h2 class="title">Our Services</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h1>📦</h1>
+        <h3>Product Orders</h3>
+        <p>
+          Place your order quickly through our website.
+        </p>
+      </div>
+
+      <div class="card">
+        <h1>📅</h1>
+        <h3>Easy Booking</h3>
+        <p>
+          Book our services online at your convenience.
+        </p>
+      </div>
+
+      <div class="card">
+        <h1>⚡</h1>
+        <h3>Fast Service</h3>
+        <p>
+          Quick response and reliable customer service.
+        </p>
+      </div>
+
+      <div class="card">
+        <h1>📱</h1>
+        <h3>WhatsApp Support</h3>
+        <p>
+          Contact us directly through WhatsApp.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ORDER FORM -->
+  <section id="order">
+
+    <h2 class="title">Book / Place Your Order</h2>
+
+    <div class="order-box">
+
+      <form id="orderForm">
+
+        <div class="form-group">
+          <label>Your Name</label>
+
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required>
+        </div>
+
+
+        <div class="form-group">
+          <label>Mobile Number</label>
+
+          <input
+            type="tel"
+            id="mobile"
+            placeholder="Enter mobile number"
+            required>
+        </div>
+
+
+        <div class="form-group">
+          <label>Select Service / Product</label>
+
+          <select id="service" required>
+
+            <option value="">
+              Select an option
+            </option>
+
+            <option value="Product Order">
+              Product Order
+            </option>
+
+            <option value="Service Booking">
+              Service Booking
+            </option>
+
+            <option value="Custom Order">
+              Custom Order
+            </option>
+
+          </select>
+        </div>
+
+
+        <div class="form-group">
+
+          <label>Quantity</label>
+
+          <input
+            type="number"
+            id="quantity"
+            min="1"
+            value="1"
+            required>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>Message / Address</label>
+
+          <textarea
+            id="message"
+            placeholder="Enter your address or order details"
+            required></textarea>
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="btn submit">
+
+          📲 Send Order on WhatsApp
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>
+      Have a question? Contact us directly.
+    </p>
+
+    <div class="phone">
+      📞 +91 92179 67776
+    </div>
+
+    <a
+      href="tel:+919217967776"
+      class="btn">
+
+      Call Now
+
+    </a>
+
+    <a
+      href="https://wa.me/919217967776"
+      target="_blank"
+      class="btn whatsapp">
+
+      WhatsApp
+
+    </a>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    © 2026 Adarsh Business.
+    All Rights Reserved.
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    document
+      .getElementById("orderForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name =
+          document.getElementById("name").value;
+
+        const mobile =
+          document.getElementById("mobile").value;
+
+        const service =
+          document.getElementById("service").value;
+
+        const quantity =
+          document.getElementById("quantity").value;
+
+        const message =
+          document.getElementById("message").value;
+
+
+        const whatsappMessage =
+          `Hello Adarsh Business,
+
+I want to place an order.
+
+Name: ${name}
+Mobile: ${mobile}
+Service/Product: ${service}
+Quantity: ${quantity}
+
+Order Details:
+${message}
+
+Thank you.`;
+
+        const whatsappURL =
+          "https://wa.me/919217967776?text="
+          + encodeURIComponent(whatsappMessage);
+
+        window.open(
+          whatsappURL,
+          "_blank"
+        );
+
+      });
+
+  </script>
+
+</body>
+</html>
